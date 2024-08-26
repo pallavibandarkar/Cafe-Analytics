@@ -1,0 +1,66 @@
+.Navbar{
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    position: sticky;
+    z-index: 10;
+    /* border-bottom: 1px solid #6F4E37; */
+    box-shadow: 0px 5px 0px 0px #6F4E37;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    align-items: center;
+}
+.logow{
+    height: 70px;
+    width: 200px;
+    align-items: center;
+}
+.Nav-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+}
+.Nav-menu a{
+    justify-content: space-evenly;
+    justify-content: center;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.Nav-menu a:hover{
+    color: #6F4E37;
+    text-decoration: underline #6F4E37;
+    font-size: 20px;
+    font-weight: 900;
+}
+.Navbar-right{
+    display: flex;
+}
+.Navbar-right button{
+    font-size: 15px;
+    align-items: center;
+    padding: 13px;
+    border-radius: 25%;
+    /* height: 50px;
+    width: 120px; */
+    border: 3px solid #6F4E37;
+    color: black;
+    background-color: white;
+    font-weight: 500;
+}
+.Navbar-right button:hover{
+    background-color: #6F4E37;
+    color: white;
+    font-weight: 600;
+}
+
