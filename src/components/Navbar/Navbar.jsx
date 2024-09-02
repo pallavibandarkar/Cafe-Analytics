@@ -1,6 +1,7 @@
 import "./Navbar.css"
 import {assets} from "../../assets/assets.js"
-export default function Navbar(){
+import { useState } from "react";
+export default function Navbar({setCurrState}){
     return(
         <>
         <div className="Navbar">
@@ -11,15 +12,15 @@ export default function Navbar(){
 
     
           <ul className="Nav-menu">
-            <li><a>Home</a></li>
-            <li><a>Features</a></li>
-            <li><a>Contact Us</a></li>
-            <li><a>Insights Dashboard</a></li>
-            <li><a> About Us</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">Insights Dashboard</a></li>
+            <li><a href="#features"> About Us</a></li>
           </ul>
           
           <div className="Navbar-right">
-              <button>Sign Up</button>
+              <button onClick={()=>setCurrState(true)}>Sign Up</button>
           </div>
         </div>
         
