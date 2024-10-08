@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from "react";
 import { assets } from "../../assets/assets.js";
 import "./Login.css"
+import axios from 'axios'
 export default function login({setCurrState}){
 
     let [loginState,setLoginState] = useState("Sign Up");
@@ -19,10 +20,28 @@ export default function login({setCurrState}){
         console.log(data);
     },[data])
 
-    const submitForm = (event)=>{
+    const submitForm = async (event)=>{
         event.preventDefault();
         console.log(data);
+
+        try {
+            if (loginState === "Login") {
+                const response = await axios.post("http://localhost:8080/login", data);
+                console.log("Login successful:", response.data);
+            } else {
+                const response = await axios.post("http://localhost:8080/signup", data,{
+                    headers: {
+                        "Content-Type": "application/json"
+                    }});
+                console.log("Registration successful:", response.data);
+            }
+        } catch (error) {
+            console.error("Error:", error);
+        }
+
+
     }
+    
     return(
     <>
     <div className="login">
@@ -34,15 +53,17 @@ export default function login({setCurrState}){
             
             <div className="credentials">
             
-            {loginState === "Login"?<></>:
             <div className="credentials">
                <label htmlFor="username"><b>Username:</b></label>
                <input placeholder="Enter Username" name="username" id="username" type="text" value={data.username} onChange={onChaneHandeler}/>
+            </div>
+
+            {loginState === "Login"?<></>:
+            <div className="credentials">
+                <label htmlFor="email"><b>E-mail:</b></label>
+                <input placeholder="Enter E-mail" name="email" id="email" type="email" value={data.email} onChange={onChaneHandeler}/>
+                
             </div>}
-
-
-            <label htmlFor="email"><b>E-mail:</b></label>
-            <input placeholder="Enter E-mail" name="email" id="email" type="email" value={data.email} onChange={onChaneHandeler}/>
 
             <label htmlFor="username"><b>Password:</b></label>
             <input placeholder="Enter Password" name="password" id="password" type="password" value={data.password} onChange={onChaneHandeler}/>
@@ -59,6 +80,6 @@ export default function login({setCurrState}){
             :<p>Alredy have an account <span onClick={()=>setLoginState("Login")}><b>Click here</b></span></p> }
         </form>
     </div>
-    </>
-    )
+   </>
+   )
 }

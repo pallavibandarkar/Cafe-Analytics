@@ -13,7 +13,7 @@ export default function Reviews(){
                 <img src={assets.review1}/>
             </div>
             <div className="r_desc">
-                <h6>Sarah Thompson</h6>
+                <h4>Sarah Thompson</h4>
                 <p>The AI recommendations have transformed our menu strategy. We're now able to predict popular
                      items and improve our sales!</p>
             </div>
