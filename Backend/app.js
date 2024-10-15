@@ -61,10 +61,17 @@ app.post("/signup",async(req,res)=>{
     }
 })
 
-app.post("/login",passport.authenticate("local"),async(req,res)=>{
+/*app.post("/login",passport.authenticate("local"),async(req,res)=>{
     console.log(req.body)
     res.send("Welcom");
-})
+})*/
+app.post("/login", passport.authenticate("local"), (req, res) => {
+    if (req.isAuthenticated()) {
+        res.status(200).json({ success: true, message: "Login successful" });
+    } else {
+        res.status(401).json({ success: false, message: "Invalid credentials" });
+    }
+});
 
 app.listen(8080,()=>{
     console.log("App Listening on port 8080");
