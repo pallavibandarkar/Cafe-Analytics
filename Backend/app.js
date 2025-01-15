@@ -1,38 +1,131 @@
-import express from "express";
-import {connectDb} from "./config/db.js"
-import session from "express-session";
+import express from 'express';
+import axios from 'axios';
+import cors from 'cors';
+import passport from 'passport';
+import { connectDb } from './config/db.js';
+import session from 'express-session';
+import LocalStrategy from 'passport-local';
+import User from './models/user.js';
+import authRoutes from './routes/authRoutes.js';
 import { Cookie } from "express-session";
-import User from "./models/user.js"
-import passport from "passport";
-import LocalStrategy from "passport-local";
-import cors from 'cors'
-
+import reviewsRoutes from './routes/reviewsRoutes.js';
+import transactionRoutes from './routes/transactionRoutes.js';
 const app = express();
+const port = 8080; // Express runs on this port
+const FLASK_API_URL = 'http://localhost:5000'; // Flask API URL (Ensure Flask is running)
+
+// Database connection
 connectDb();
 
+app.use(express.json());
+app.use('/api/transactions', transactionRoutes);
+app.use('/api/reviews', reviewsRoutes);
+// Session configuration
+const sessionOptions = {
+  secret: 'mysupersecret@11222**&&&',
+  resave: false,
+  saveUninitialized: true,
+  cookie: {
+    expires: Date.now() + 7 * 24 * 60 * 60 * 1000,
+    maxAge: 7 * 24 * 60 * 60 * 1000,
+    httpOnly: true,
+  },
+};
 
-const sessionOptions={
-    secret:"mysupersecret@11222**&&&",
-    resave:false,
-    saveUninitialized:true,
-    cookie:{
-        expires:Date.now()+7*24*60*60*1000,
-        maxAge: 7*24*60*60*1000,
-        httpOnly:true,       
-    }
-}
-
+// Middleware configuration
 app.use(express.json()); // to parse JSON bodies
-app.use(express.urlencoded({ extended: true })); // to pars
-
+app.use(express.urlencoded({ extended: true })); // to parse URL-encoded bodies
 app.use(session(sessionOptions));
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(cors());
+
+// Passport configuration
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-app.use(cors());
+// Routes
+app.use('/api/auth', authRoutes); // Authentication routes
+app.post('/show', async (req, res) => {
+  try {
+    const { user_id, n } = req.body;
+     const parsedUserId = parseInt(user_id, 10);
+     const number=parseInt(n,10)
+    const response = await axios.post(
+      `${FLASK_API_URL}/show`,
+      {
+        user_id: parsedUserId,
+        n:number
+      }
+    );
+
+    res.json(response.data); // Send back the sentiment result
+  } catch (error) {
+    console.error('Error in /sentiment route:', error);
+    res.status(500).json({ message: 'Error in sentiment analysis' });
+  }
+});
+
+app.post('/recommend', async (req, res) => {
+  try {
+    const { user_id, n } = req.body;
+    let sessionIndex = req.session.sessionIndex || 0;  // Get session index from Express or default to 0
+
+    // Forward the session index to Flask
+    const response = await axios.post(
+      `${FLASK_API_URL}/recommend`,  // Flask endpoint
+      {
+        user_id: user_id,
+        n: n,
+        session_index: sessionIndex,  // Send session index to Flask
+      },
+      { responseType: 'arraybuffer' }
+    );
+
+    // Get the new session index from the Flask response headers
+    const newSessionIndex = parseInt(response.headers['x-session-index'], 10);
+
+    // Update the session index in Express session
+    req.session.sessionIndex = newSessionIndex;
+
+    // Send the PDF response back to the client
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', 'attachment; filename=filtered_recommendations.pdf');
+    res.send(response.data);
+
+  } catch (error) {
+    console.error("Error in /recommend route:", error);
+    res.status(500).json({ message: 'Error in getting recommendations' });
+  }
+});
 
 
+
+// Route to forward sentiment analysis to Flask API
+app.post('/sentiment', async (req, res) => {
+  try {
+    const { user_id, product, review } = req.body;
+     const parsedUserId = parseInt(user_id, 10);
+    const response = await axios.post(
+      `${FLASK_API_URL}/sentiment`,
+      {
+        user_id: parsedUserId,
+        product: product,
+        review: review,
+      }
+    );
+
+    res.json(response.data); // Send back the sentiment result
+  } catch (error) {
+    console.error('Error in /sentiment route:', error);
+    res.status(500).json({ message: 'Error in sentiment analysis' });
+  }
+});
+
+app.use(cors({
+  origin: 'http://localhost:5173'  // Allow only this specific origin
+}))
 app.get("/",(req,res)=>{
     res.send("Hello root");
 })
@@ -72,7 +165,7 @@ app.post("/login", passport.authenticate("local"), (req, res) => {
         res.status(401).json({ success: false, message: "Invalid credentials" });
     }
 });
-
-app.listen(8080,()=>{
-    console.log("App Listening on port 8080");
-})
+// Start the server
+app.listen(port, () => {
+  console.log(`Express server running on port ${port}`);
+});
