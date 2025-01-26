@@ -69,18 +69,19 @@ app.post('/show', async (req, res) => {
 
 app.post('/recommend', async (req, res) => {
   try {
-    const { user_id, n } = req.body;
+    const { user_id } = req.body;
     let sessionIndex = req.session.sessionIndex || 0;  // Get session index from Express or default to 0
+
+    console.log(`Requesting recommendations for User ID: ${user_id}, Session Index: ${sessionIndex}`);
 
     // Forward the session index to Flask
     const response = await axios.post(
-      `${FLASK_API_URL}/recommend`,  // Flask endpoint
+      `${FLASK_API_URL}/recommend`,  // Ensure FLASK_API_URL is a string and properly configured
       {
         user_id: user_id,
-        n: n,
         session_index: sessionIndex,  // Send session index to Flask
       },
-      { responseType: 'arraybuffer' }
+      { responseType: 'arraybuffer' }  // Expecting a binary PDF response
     );
 
     // Get the new session index from the Flask response headers
@@ -88,6 +89,8 @@ app.post('/recommend', async (req, res) => {
 
     // Update the session index in Express session
     req.session.sessionIndex = newSessionIndex;
+
+    console.log(`Updated session index: ${newSessionIndex}`);
 
     // Send the PDF response back to the client
     res.setHeader('Content-Type', 'application/pdf');
@@ -99,6 +102,7 @@ app.post('/recommend', async (req, res) => {
     res.status(500).json({ message: 'Error in getting recommendations' });
   }
 });
+
 
 
 
