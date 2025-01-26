@@ -1,0 +1,73 @@
+/* CSS for Welcome Component */
+
+/* Styling for the main welcome page container */
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+   
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for the welcome message */
+.welcome-page h1 {
+    font-size: 2.5rem;
+    margin-left: 60px;
+    color: #af7d4c; /* Green color for a welcoming tone */
+}
+
+/* Styling for the subtext (paragraph) */
+.welcome-page p {
+    font-size: 1.25rem;
+
+    color: #555;
+}
+
+/* Container for navigation buttons */
+.navigation-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* Styling for individual buttons */
+.navigation-buttons button {
+    background-color: #06468a; /* Blue color for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.navigation-buttons button:active {
+    background-color: #004080; /* Even darker blue when clicked */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome-page h1 {
+        font-size: 2rem;
+    }
+
+    .welcome-page p {
+        font-size: 1rem;
+    }
+
+    .navigation-buttons button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

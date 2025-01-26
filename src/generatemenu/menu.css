@@ -1,0 +1,59 @@
+/* menu.css */
+.recommend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width:500px;
+  
+  margin: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommend label {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.recommend input {
+  padding: 8px;
+  font-size: 16px;
+  margin: 10px 0;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.recommend button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recommend button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.recommend button:hover:enabled {
+  background-color: #45a049;
+}
+
+.recommend div {
+  margin-top: 20px;
+  color: #ff0000;
+}
+
+.recommend .finished {
+  margin-top: 10px;
+  color: #007BFF;
+  font-weight: bold;
+}

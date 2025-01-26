@@ -4,10 +4,19 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Welcome from "./components/Welcome/Welcome.jsx";
 import Login from "./components/Login/Login.jsx";
-
+import SentimentForm from "./Sentiment/sentiments.jsx";
+import ReviewForm from "./Rtable/r.jsx";
+import TransactionForm from "./Transaction/tform.jsx";
+import RecommendationForm from "./generatemenu/menu.jsx";
+import PrivateRoutes from "./PrivateRoutes/p.jsx";
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false); // Track if the user is logged in
-    const [isLoginPopupVisible, setIsLoginPopupVisible] = useState(false); // Track visibility of login popup
+    const [isLoginPopupVisible, setIsLoginPopupVisible] = useState(false); 
+    const handleLogout = () => {
+        setIsLoggedIn(false); // Update logged-in state
+        localStorage.removeItem("userToken"); // Clear authentication data
+        localStorage.removeItem("userData");  // Optional: Clear user details
+    };// Track visibility of login popup
 
     return (
         <>
@@ -25,7 +34,14 @@ function App() {
             )}
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/welcome" element={<Welcome />} /> {/* Add this route */}
+                <Route element={<PrivateRoutes isLoggedIn={isLoggedIn}/>}>
+                <Route path="/welcome" element={<Welcome />} /> 
+                <Route path="/sentiment" element={<SentimentForm />} />
+                <Route path="/reviews" element={<ReviewForm/>} /> 
+                <Route path="/transactions" element={<TransactionForm/>}/>
+                <Route path="/recommend" element={<RecommendationForm/>} />
+                </Route>
+                  {/* Add this route */}
             </Routes>
         </>
     );
