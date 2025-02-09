@@ -1,0 +1,531 @@
+UserID,Product,Review,Sentiment,Ratings
+1021,Eclair,"The Eclair exceeded my expectations, will buy again!",POSITIVE,3
+1022,Bagel,"I found the Bagel to be just okay, not great.",NEGATIVE,1
+1023,Tropical Iceberg,"I found the Tropical Iceberg to be just okay, not great.",NEGATIVE,1
+1024,Filter Coffee,"The Filter Coffee is amazing, highly recommend it!",POSITIVE,3
+1025,Cookie,"I found the Cookie to be just okay, not great.",NEGATIVE,1
+1026,Red Eye,"Not a fan of the Red Eye, it didn't suit my preferences.",NEGATIVE,1
+1027,Muffin,"The Muffin could be better, but it's not bad.",POSITIVE,3
+1028,Pizza,"The Pizza is fantastic, a great addition to the menu.",POSITIVE,3
+1029,Salad,"The Salad is amazing, highly recommend it!",POSITIVE,3
+1030,Danish,I didn't enjoy the Danish as much as I'd hoped.,NEGATIVE,1
+1031,Baguette,"The Baguette exceeded my expectations, will buy again!",POSITIVE,3
+1032,Macchiato,"I found the Macchiato to be just okay, not great.",NEGATIVE,1
+1033,Alphonso Mango Frappe,I didn't enjoy the Alphonso Mango Frappe as much as I'd hoped.,NEGATIVE,1
+1034,Bagel,The Bagel is too strong for my taste.,NEGATIVE,1
+1035,Crackling Brownie Pastry,I didn't enjoy the Crackling Brownie Pastry as much as I'd hoped.,NEGATIVE,1
+1036,Pasta,"Absolutely loved the Pasta, perfect for any day.",POSITIVE,3
+1037,Hot Tea Latte,I didn't enjoy the Hot Tea Latte as much as I'd hoped.,NEGATIVE,1
+1038,Popcorn,"The Popcorn is fantastic, a great addition to the menu.",POSITIVE,3
+1039,Crunchy Frappe,"The Crunchy Frappe exceeded my expectations, will buy again!",POSITIVE,3
+1040,Popcorn,"The Popcorn is fantastic, a great addition to the menu.",POSITIVE,3
+1041,Pasta,"Not a fan of the Pasta, it didn't suit my preferences.",NEGATIVE,1
+1042,Vienna,"The Vienna is fantastic, a great addition to the menu.",POSITIVE,3
+1043,Pizza,"Absolutely loved the Pizza, perfect for any day.",POSITIVE,3
+1044,Cafe Latte,"Not a fan of the Cafe Latte, it didn't suit my preferences.",NEGATIVE,1
+1045,Flat White,"The Flat White could be better, but it's not bad.",POSITIVE,3
+1046,Filter Coffee,The Filter Coffee is too strong for my taste.,NEGATIVE,1
+1047,Iced Latte,I didn't enjoy the Iced Latte as much as I'd hoped.,NEGATIVE,1
+1048,Gourmet Belgian Cold Chocolate,The Gourmet Belgian Cold Chocolate is too strong for my taste.,NEGATIVE,1
+1049,Americano,"The Americano was just what I needed, excellent choice.",POSITIVE,3
+1050,Iced Latte,"The Iced Latte is fantastic, a great addition to the menu.",POSITIVE,3
+1051,Scone,"The Scone was just what I needed, excellent choice.",POSITIVE,3
+1052,Eclair,"The Eclair is amazing, highly recommend it!",POSITIVE,3
+1053,Macaron,"The Macaron exceeded my expectations, will buy again!",POSITIVE,3
+1054,Brownie,"Not a fan of the Brownie, it didn't suit my preferences.",NEGATIVE,1
+1055,Donut,I didn't enjoy the Donut as much as I'd hoped.,NEGATIVE,1
+1056,Masala Tea,"The Masala Tea is amazing, highly recommend it!",POSITIVE,3
+1057,Pizza,"The Pizza is amazing, highly recommend it!",POSITIVE,3
+1058,Quiche,I didn't enjoy the Quiche as much as I'd hoped.,NEGATIVE,1
+1059,Crackling Brownie Pastry,"The Crackling Brownie Pastry is amazing, highly recommend it!",POSITIVE,3
+1060,Americano,I didn't enjoy the Americano as much as I'd hoped.,NEGATIVE,1
+1061,Popcorn,"The Popcorn was just what I needed, excellent choice.",POSITIVE,3
+1062,Vanilla Latte,"The Vanilla Latte exceeded my expectations, will buy again!",POSITIVE,3
+1063,Classic Lemonade,"I found the Classic Lemonade to be just okay, not great.",NEGATIVE,1
+1064,Crackling Brownie Pastry,"The Crackling Brownie Pastry is amazing, highly recommend it!",POSITIVE,3
+1065,Vanilla Latte,"Absolutely loved the Vanilla Latte, perfect for any day.",POSITIVE,3
+1066,Granola Bar,"The Granola Bar is fantastic, a great addition to the menu.",POSITIVE,3
+1067,Cookie,"Not a fan of the Cookie, it didn't suit my preferences.",NEGATIVE,1
+1068,Gourmet Belgian Cold Chocolate,"Absolutely loved the Gourmet Belgian Cold Chocolate, perfect for any day.",POSITIVE,3
+1069,Tacos,"The Tacos could be better, but it's not bad.",POSITIVE,3
+1070,Chocolate Fantasy Cake Shake,The Chocolate Fantasy Cake Shake is too strong for my taste.,NEGATIVE,1
+1071,Bagel,"Absolutely loved the Bagel, perfect for any day.",POSITIVE,3
+1072,Iced Cappuccino,"I found the Iced Cappuccino to be just okay, not great.",NEGATIVE,1
+1073,Red Eye,"The Red Eye exceeded my expectations, will buy again!",POSITIVE,3
+1074,Elaichi Tea,"Not a fan of the Elaichi Tea, it didn't suit my preferences.",NEGATIVE,1
+1075,Cortado,I didn't enjoy the Cortado as much as I'd hoped.,NEGATIVE,1
+1076,Tropical Iceberg,"Not a fan of the Tropical Iceberg, it didn't suit my preferences.",NEGATIVE,1
+1077,Iced Latte,"Not a fan of the Iced Latte, it didn't suit my preferences.",NEGATIVE,1
+1078,Iced Coffee,"Absolutely loved the Iced Coffee, perfect for any day.",POSITIVE,3
+1079,Granola Bar,"The Granola Bar is fantastic, a great addition to the menu.",POSITIVE,3
+1080,Cheesecake Shake,"The Cheesecake Shake is amazing, highly recommend it!",POSITIVE,3
+1081,Peach Iced Tea,"The Peach Iced Tea is fantastic, a great addition to the menu.",POSITIVE,3
+1082,Croissant,"The Croissant is amazing, highly recommend it!",POSITIVE,3
+1083,Crackling Brownie Pastry,"The Crackling Brownie Pastry exceeded my expectations, will buy again!",POSITIVE,3
+1084,Turmeric Ginger Cappuccino,"I found the Turmeric Ginger Cappuccino to be just okay, not great.",NEGATIVE,1
+1085,Cafe Latte,The Cafe Latte is too strong for my taste.,NEGATIVE,1
+1086,Lemon Green Coffee,"Not a fan of the Lemon Green Coffee, it didn't suit my preferences.",NEGATIVE,1
+1087,Flat White,"The Flat White was just what I needed, excellent choice.",POSITIVE,3
+1088,Classic Lemonade,"The Classic Lemonade is amazing, highly recommend it!",POSITIVE,3
+1089,Vegan Shake,"Not a fan of the Vegan Shake, it didn't suit my preferences.",NEGATIVE,1
+1090,Classic Lemonade,"The Classic Lemonade was just what I needed, excellent choice.",POSITIVE,3
+1091,Vegan Shake,"I found the Vegan Shake to be just okay, not great.",NEGATIVE,1
+1092,Iced Latte,"The Iced Latte is amazing, highly recommend it!",POSITIVE,3
+1093,Sandwich,"The Sandwich is amazing, highly recommend it!",POSITIVE,3
+1094,Lemon Green Coffee,"Absolutely loved the Lemon Green Coffee, perfect for any day.",POSITIVE,3
+1095,Danish,"I found the Danish to be just okay, not great.",NEGATIVE,1
+1096,Brownie,The Brownie is too strong for my taste.,NEGATIVE,1
+1097,Cupcake,"I found the Cupcake to be just okay, not great.",NEGATIVE,1
+1098,Gourmet Belgian Hot Chocolate,"Absolutely loved the Gourmet Belgian Hot Chocolate, perfect for any day.",POSITIVE,3
+1099,Danish,"The Danish was just what I needed, excellent choice.",POSITIVE,3
+1100,Iced Coffee,"Not a fan of the Iced Coffee, it didn't suit my preferences.",NEGATIVE,1
+1101,Turmeric Ginger Cappuccino,"Absolutely loved the Turmeric Ginger Cappuccino, perfect for any day.",POSITIVE,3
+1102,Macaron,"The Macaron is fantastic, a great addition to the menu.",POSITIVE,3
+1103,Burrito,"The Burrito is amazing, highly recommend it!",POSITIVE,3
+1104,Iced Coffee,"I found the Iced Coffee to be just okay, not great.",NEGATIVE,1
+1105,Macaron,"I found the Macaron to be just okay, not great.",NEGATIVE,1
+1106,Granola Bar,"The Granola Bar was just what I needed, excellent choice.",POSITIVE,3
+1107,Macchiato,"I found the Macchiato to be just okay, not great.",NEGATIVE,1
+1108,Crunchy Frappe,I didn't enjoy the Crunchy Frappe as much as I'd hoped.,NEGATIVE,1
+1109,Long Black,"I found the Long Black to be just okay, not great.",NEGATIVE,1
+1110,Cheesecake Shake,"The Cheesecake Shake could be better, but it's not bad.",POSITIVE,3
+1111,Black Eye,"The Black Eye was just what I needed, excellent choice.",POSITIVE,3
+1112,Hazelnut Brownie Cake Shake,"The Hazelnut Brownie Cake Shake could be better, but it's not bad.",POSITIVE,3
+1113,Cupcake,I didn't enjoy the Cupcake as much as I'd hoped.,NEGATIVE,1
+1114,Vanilla Latte,"The Vanilla Latte could be better, but it's not bad.",POSITIVE,3
+1115,Dark Frappe,The Dark Frappe is too strong for my taste.,NEGATIVE,1
+1116,Elaichi Tea,"The Elaichi Tea exceeded my expectations, will buy again!",POSITIVE,3
+1117,Watermelon Mojito,"The Watermelon Mojito exceeded my expectations, will buy again!",POSITIVE,3
+1118,Black Eye,"The Black Eye is amazing, highly recommend it!",POSITIVE,3
+1119,Lemon Cake Shake,"The Lemon Cake Shake was just what I needed, excellent choice.",POSITIVE,3
+1120,Long Macchiato,"The Long Macchiato exceeded my expectations, will buy again!",POSITIVE,3
+1121,Croissant,"The Croissant was just what I needed, excellent choice.",POSITIVE,3
+1122,Green Tea,"The Green Tea was just what I needed, excellent choice.",POSITIVE,3
+1123,Cupcake,The Cupcake is too strong for my taste.,POSITIVE,3
+1124,Cortado,"The Cortado is fantastic, a great addition to the menu.",POSITIVE,3
+1125,Muffin,"I found the Muffin to be just okay, not great.",NEGATIVE,1
+1126,Peach Iced Tea,"I found the Peach Iced Tea to be just okay, not great.",NEGATIVE,1
+1127,Lemon Green Coffee,The Lemon Green Coffee is too strong for my taste.,NEGATIVE,1
+1128,Elaichi Tea,"Not a fan of the Elaichi Tea, it didn't suit my preferences.",NEGATIVE,1
+1129,Hot Velvet Coffee,I didn't enjoy the Hot Velvet Coffee as much as I'd hoped.,NEGATIVE,1
+1130,Flat White,"The Flat White is fantastic, a great addition to the menu.",POSITIVE,3
+1131,Alphonso Mango Frappe,"The Alphonso Mango Frappe is amazing, highly recommend it!",POSITIVE,3
+1132,Panini,"Not a fan of the Panini, it didn't suit my preferences.",NEGATIVE,1
+1133,Quiche,"The Quiche exceeded my expectations, will buy again!",POSITIVE,3
+1134,Croissant,"Absolutely loved the Croissant, perfect for any day.",POSITIVE,3
+1135,Popcorn,"The Popcorn could be better, but it's not bad.",POSITIVE,3
+1136,Black Eye,I didn't enjoy the Black Eye as much as I'd hoped.,NEGATIVE,1
+1137,Soup,"The Soup was just what I needed, excellent choice.",POSITIVE,3
+1138,Red Eye,"The Red Eye is fantastic, a great addition to the menu.",POSITIVE,3
+1139,Long Macchiato,"The Long Macchiato is fantastic, a great addition to the menu.",POSITIVE,3
+1140,Brownie,"Not a fan of the Brownie, it didn't suit my preferences.",NEGATIVE,1
+1141,Herbal Tea,"The Herbal Tea exceeded my expectations, will buy again!",POSITIVE,3
+1142,Chocolate Fantasy Cake Shake,I didn't enjoy the Chocolate Fantasy Cake Shake as much as I'd hoped.,NEGATIVE,1
+1143,Croissant,"The Croissant was just what I needed, excellent choice.",POSITIVE,3
+1144,Crunchy Frappe,"The Crunchy Frappe exceeded my expectations, will buy again!",POSITIVE,3
+1145,Lemon Green Coffee,"The Lemon Green Coffee is amazing, highly recommend it!",POSITIVE,3
+1146,Cupcake,I didn't enjoy the Cupcake as much as I'd hoped.,NEGATIVE,1
+1147,Cheesecake Shake,"The Cheesecake Shake was just what I needed, excellent choice.",POSITIVE,3
+1148,Cupcake,"The Cupcake could be better, but it's not bad.",POSITIVE,3
+1149,Gourmet Belgian Cold Chocolate,"Not a fan of the Gourmet Belgian Cold Chocolate, it didn't suit my preferences.",NEGATIVE,1
+1150,Lemon Cake Shake,"I found the Lemon Cake Shake to be just okay, not great.",NEGATIVE,1
+1151,Flavoured Ice Cream,"The Flavoured Ice Cream is amazing, highly recommend it!",POSITIVE,3
+1152,Hot Velvet Coffee,"The Hot Velvet Coffee is fantastic, a great addition to the menu.",POSITIVE,3
+1153,Turmeric Ginger Cappuccino,"The Turmeric Ginger Cappuccino is amazing, highly recommend it!",POSITIVE,3
+1154,Cafe Latte,"The Cafe Latte could be better, but it's not bad.",POSITIVE,3
+1155,Black Eye,"The Black Eye is fantastic, a great addition to the menu.",POSITIVE,3
+1156,Ginger Tea,"The Ginger Tea could be better, but it's not bad.",POSITIVE,3
+1157,Gourmet Belgian Cold Chocolate,"Not a fan of the Gourmet Belgian Cold Chocolate, it didn't suit my preferences.",NEGATIVE,1
+1158,Dark Frappe,"I found the Dark Frappe to be just okay, not great.",NEGATIVE,1
+1159,Bagel,"The Bagel exceeded my expectations, will buy again!",POSITIVE,3
+1160,Green Tea,"The Green Tea exceeded my expectations, will buy again!",POSITIVE,3
+1161,Popcorn,"The Popcorn exceeded my expectations, will buy again!",POSITIVE,3
+1162,Long Macchiato,"Not a fan of the Long Macchiato, it didn't suit my preferences.",NEGATIVE,1
+1163,Dark Frappe,"The Dark Frappe could be better, but it's not bad.",POSITIVE,3
+1164,Bagel,"The Bagel is amazing, highly recommend it!",POSITIVE,3
+1165,Vanilla Latte,"The Vanilla Latte exceeded my expectations, will buy again!",POSITIVE,3
+1166,Vienna,"The Vienna could be better, but it's not bad.",POSITIVE,3
+1167,Danish,"Not a fan of the Danish, it didn't suit my preferences.",NEGATIVE,1
+1168,Salad,"I found the Salad to be just okay, not great.",NEGATIVE,1
+1169,Elaichi Tea,"The Elaichi Tea is fantastic, a great addition to the menu.",POSITIVE,3
+1170,Cortado,"The Cortado exceeded my expectations, will buy again!",POSITIVE,3
+1171,Cake,The Cake is too strong for my taste.,NEGATIVE,1
+1172,Vegan Shake,"Absolutely loved the Vegan Shake, perfect for any day.",POSITIVE,3
+1173,Hot Tea Latte,"The Hot Tea Latte could be better, but it's not bad.",POSITIVE,3
+1174,Peach Iced Tea,"The Peach Iced Tea was just what I needed, excellent choice.",POSITIVE,3
+1175,Peach Iced Tea,"Not a fan of the Peach Iced Tea, it didn't suit my preferences.",NEGATIVE,1
+1176,Green Tea,"The Green Tea is fantastic, a great addition to the menu.",POSITIVE,3
+1177,Vanilla Latte,"Not a fan of the Vanilla Latte, it didn't suit my preferences.",NEGATIVE,1
+1178,Croissant,I didn't enjoy the Croissant as much as I'd hoped.,NEGATIVE,1
+1179,Ginger Tea,The Ginger Tea is too strong for my taste.,NEGATIVE,1
+1180,Macaron,The Macaron is too strong for my taste.,NEGATIVE,1
+1181,Sandwich,"The Sandwich is fantastic, a great addition to the menu.",POSITIVE,3
+1182,Macchiato,"I found the Macchiato to be just okay, not great.",NEGATIVE,1
+1183,Cortado,"I found the Cortado to be just okay, not great.",NEGATIVE,1
+1184,Quiche,"The Quiche is fantastic, a great addition to the menu.",POSITIVE,3
+1185,Chocolate Fantasy Cake Shake,"I found the Chocolate Fantasy Cake Shake to be just okay, not great.",NEGATIVE,1
+1186,Cafe Latte,I didn't enjoy the Cafe Latte as much as I'd hoped.,NEGATIVE,1
+1187,Pudding,I didn't enjoy the Pudding as much as I'd hoped.,NEGATIVE,1
+1188,Macaron,"The Macaron is fantastic, a great addition to the menu.",POSITIVE,3
+1189,Lemon Green Coffee,"The Lemon Green Coffee is fantastic, a great addition to the menu.",POSITIVE,3
+1190,Cupcake,I didn't enjoy the Cupcake as much as I'd hoped.,NEGATIVE,1
+1191,Burrito,"The Burrito is amazing, highly recommend it!",POSITIVE,3
+1192,Scone,I didn't enjoy the Scone as much as I'd hoped.,NEGATIVE,1
+1193,Macaron,"The Macaron was just what I needed, excellent choice.",POSITIVE,3
+1194,Affogato,"Absolutely loved the Affogato, perfect for any day.",POSITIVE,3
+1195,Muffin,"I found the Muffin to be just okay, not great.",NEGATIVE,1
+1196,Cutlet,The Cutlet is too strong for my taste.,NEGATIVE,1
+1197,Cake,"The Cake could be better, but it's not bad.",POSITIVE,3
+1198,Eclair,"The Eclair could be better, but it's not bad.",POSITIVE,3
+1199,Salad,The Salad is too strong for my taste.,NEGATIVE,1
+1200,Cocoa Fantasy Pastry,"The Cocoa Fantasy Pastry exceeded my expectations, will buy again!",POSITIVE,3
+1201,Iced Mocha,"The Iced Mocha exceeded my expectations, will buy again!",POSITIVE,3
+1202,Tacos,"The Tacos is amazing, highly recommend it!",POSITIVE,3
+1203,Iced Latte,"I found the Iced Latte to be just okay, not great.",NEGATIVE,1
+1204,Vanilla Cappuccino,"The Vanilla Cappuccino could be better, but it's not bad.",POSITIVE,3
+1205,Lemon Green Coffee,"The Lemon Green Coffee could be better, but it's not bad.",POSITIVE,3
+1206,Soup,I didn't enjoy the Soup as much as I'd hoped.,NEGATIVE,1
+1207,Soup,"The Soup was just what I needed, excellent choice.",POSITIVE,3
+1208,Green Tea,"Not a fan of the Green Tea, it didn't suit my preferences.",NEGATIVE,1
+1209,Breve,"The Breve is amazing, highly recommend it!",POSITIVE,3
+1210,Watermelon Granita,The Watermelon Granita is too strong for my taste.,NEGATIVE,1
+1211,Macchiato,"Absolutely loved the Macchiato, perfect for any day.",POSITIVE,3
+1212,Danish,"The Danish was just what I needed, excellent choice.",POSITIVE,3
+1213,Tropical Iceberg,"The Tropical Iceberg was just what I needed, excellent choice.",POSITIVE,3
+1214,Vanilla Latte,The Vanilla Latte is too strong for my taste.,NEGATIVE,1
+1215,Hot Tea Latte,"The Hot Tea Latte could be better, but it's not bad.",POSITIVE,3
+1216,Cocoa Fantasy Pastry,I didn't enjoy the Cocoa Fantasy Pastry as much as I'd hoped.,NEGATIVE,1
+1217,Classic Lemonade,The Classic Lemonade is too strong for my taste.,NEGATIVE,1
+1218,Eclair,The Eclair is too strong for my taste.,NEGATIVE,1
+1219,Iced Coffee,"The Iced Coffee was just what I needed, excellent choice.",POSITIVE,3
+1220,Pudding,"The Pudding exceeded my expectations, will buy again!",POSITIVE,3
+1221,Soup,I didn't enjoy the Soup as much as I'd hoped.,NEGATIVE,1
+1222,Macchiato,"The Macchiato was just what I needed, excellent choice.",POSITIVE,3
+1223,Brioche,"Absolutely loved the Brioche, perfect for any day.",POSITIVE,3
+1224,Bagel,"I found the Bagel to be just okay, not great.",NEGATIVE,1
+1225,Cupcake,"The Cupcake is fantastic, a great addition to the menu.",POSITIVE,3
+1226,Scone,"Absolutely loved the Scone, perfect for any day.",POSITIVE,3
+1227,Panini,"I found the Panini to be just okay, not great.",NEGATIVE,1
+1228,Brownie,"The Brownie exceeded my expectations, will buy again!",POSITIVE,3
+1229,Cheesecake Shake,"The Cheesecake Shake was just what I needed, excellent choice.",POSITIVE,3
+1230,Vanilla Cappuccino,I didn't enjoy the Vanilla Cappuccino as much as I'd hoped.,NEGATIVE,1
+1231,Quiche,"I found the Quiche to be just okay, not great.",NEGATIVE,1
+1232,Quiche,"The Quiche was just what I needed, excellent choice.",POSITIVE,3
+1233,Pudding,"The Pudding is fantastic, a great addition to the menu.",POSITIVE,3
+1234,Herbal Tea,"The Herbal Tea is fantastic, a great addition to the menu.",POSITIVE,3
+1235,Cookie,"Absolutely loved the Cookie, perfect for any day.",POSITIVE,3
+1236,Turmeric Ginger Cappuccino,I didn't enjoy the Turmeric Ginger Cappuccino as much as I'd hoped.,NEGATIVE,1
+1237,Croissant,The Croissant is too strong for my taste.,NEGATIVE,1
+1238,Dark Frappe,"The Dark Frappe is amazing, highly recommend it!",POSITIVE,3
+1239,Scone,"Absolutely loved the Scone, perfect for any day.",POSITIVE,3
+1240,Chocolate Fantasy Cake Shake,"The Chocolate Fantasy Cake Shake could be better, but it's not bad.",POSITIVE,3
+1241,Granola Bar,"The Granola Bar exceeded my expectations, will buy again!",POSITIVE,3
+1242,Eclair,"The Eclair could be better, but it's not bad.",POSITIVE,3
+1243,Long Macchiato,I didn't enjoy the Long Macchiato as much as I'd hoped.,NEGATIVE,1
+1244,Flat White,I didn't enjoy the Flat White as much as I'd hoped.,NEGATIVE,1
+1245,Red Eye,"The Red Eye is amazing, highly recommend it!",POSITIVE,3
+1246,Chocolate Fantasy Cake Shake,"The Chocolate Fantasy Cake Shake exceeded my expectations, will buy again!",POSITIVE,3
+1247,Crunchy Frappe,"Not a fan of the Crunchy Frappe, it didn't suit my preferences.",NEGATIVE,1
+1248,Gourmet Belgian Cold Chocolate,"Not a fan of the Gourmet Belgian Cold Chocolate, it didn't suit my preferences.",NEGATIVE,1
+1249,Brownie,"The Brownie was just what I needed, excellent choice.",POSITIVE,3
+1250,Vienna,"The Vienna could be better, but it's not bad.",POSITIVE,3
+1251,Muffin,"Absolutely loved the Muffin, perfect for any day.",POSITIVE,3
+1252,Cafe Latte,"The Cafe Latte exceeded my expectations, will buy again!",POSITIVE,3
+1253,Iced Cappuccino,"Absolutely loved the Iced Cappuccino, perfect for any day.",POSITIVE,3
+1254,Vienna,"Absolutely loved the Vienna, perfect for any day.",POSITIVE,3
+1255,Vanilla Cappuccino,"The Vanilla Cappuccino was just what I needed, excellent choice.",POSITIVE,3
+1256,Vanilla Latte,"Not a fan of the Vanilla Latte, it didn't suit my preferences.",NEGATIVE,1
+1257,Tropical Iceberg,"The Tropical Iceberg is amazing, highly recommend it!",POSITIVE,3
+1258,Cake,"I found the Cake to be just okay, not great.",NEGATIVE,1
+1259,Vanilla Cappuccino,"I found the Vanilla Cappuccino to be just okay, not great.",NEGATIVE,1
+1260,Soup,"Not a fan of the Soup, it didn't suit my preferences.",NEGATIVE,1
+1261,Flavoured Ice Cream,"The Flavoured Ice Cream exceeded my expectations, will buy again!",POSITIVE,3
+1262,Long Black,The Long Black is too strong for my taste.,NEGATIVE,1
+1263,Sandwich,"The Sandwich was just what I needed, excellent choice.",POSITIVE,3
+1264,Gourmet Belgian Cold Chocolate,"The Gourmet Belgian Cold Chocolate exceeded my expectations, will buy again!",POSITIVE,3
+1265,Green Tea,"The Green Tea is fantastic, a great addition to the menu.",POSITIVE,3
+1266,Vegan Shake,"The Vegan Shake could be better, but it's not bad.",POSITIVE,3
+1267,Tacos,"The Tacos is amazing, highly recommend it!",POSITIVE,3
+1268,Turmeric Ginger Cappuccino,"Not a fan of the Turmeric Ginger Cappuccino, it didn't suit my preferences.",NEGATIVE,1
+1269,Alphonso Mango Frappe,The Alphonso Mango Frappe is too strong for my taste.,NEGATIVE,1
+1270,Cupcake,"I found the Cupcake to be just okay, not great.",NEGATIVE,1
+1271,Elaichi Tea,"The Elaichi Tea exceeded my expectations, will buy again!",POSITIVE,3
+1272,Cortado,"The Cortado could be better, but it's not bad.",POSITIVE,3
+1273,Gourmet Belgian Hot Chocolate,"Not a fan of the Gourmet Belgian Hot Chocolate, it didn't suit my preferences.",NEGATIVE,1
+1274,Flavoured Ice Cream,"I found the Flavoured Ice Cream to be just okay, not great.",NEGATIVE,1
+1275,Macaron,"The Macaron is fantastic, a great addition to the menu.",POSITIVE,3
+1276,Granola Bar,"I found the Granola Bar to be just okay, not great.",NEGATIVE,1
+1277,Cocoa Fantasy Pastry,"Not a fan of the Cocoa Fantasy Pastry, it didn't suit my preferences.",NEGATIVE,1
+1278,Soup,"Absolutely loved the Soup, perfect for any day.",POSITIVE,3
+1279,Cortado,"The Cortado exceeded my expectations, will buy again!",POSITIVE,3
+1280,Cortado,I didn't enjoy the Cortado as much as I'd hoped.,NEGATIVE,1
+1281,Long Black,The Long Black is too strong for my taste.,NEGATIVE,1
+1282,Hazelnut Brownie Cake Shake,"Not a fan of the Hazelnut Brownie Cake Shake, it didn't suit my preferences.",NEGATIVE,1
+1283,Lemon Green Coffee,"The Lemon Green Coffee was just what I needed, excellent choice.",POSITIVE,3
+1284,Macchiato,"The Macchiato exceeded my expectations, will buy again!",POSITIVE,3
+1285,Ginger Tea,"The Ginger Tea is fantastic, a great addition to the menu.",POSITIVE,3
+1286,Black Eye,"Not a fan of the Black Eye, it didn't suit my preferences.",NEGATIVE,1
+1287,Pineapple Delight Pastry,"Absolutely loved the Pineapple Delight Pastry, perfect for any day.",POSITIVE,3
+1288,Iced Latte,"The Iced Latte is fantastic, a great addition to the menu.",POSITIVE,3
+1289,Muffin,The Muffin is too strong for my taste.,NEGATIVE,1
+1290,Flat White,"Absolutely loved the Flat White, perfect for any day.",POSITIVE,3
+1291,Lemon Green Coffee,"The Lemon Green Coffee exceeded my expectations, will buy again!",POSITIVE,3
+1292,Breve,I didn't enjoy the Breve as much as I'd hoped.,NEGATIVE,1
+1293,Tacos,"The Tacos is amazing, highly recommend it!",POSITIVE,3
+1294,Bagel,"The Bagel is amazing, highly recommend it!",POSITIVE,3
+1295,Americano,"The Americano was just what I needed, excellent choice.",POSITIVE,3
+1296,Danish,"The Danish could be better, but it's not bad.",POSITIVE,3
+1297,Macaron,The Macaron is too strong for my taste.,NEGATIVE,1
+1298,Brownie,The Brownie is too strong for my taste.,NEGATIVE,1
+1299,Hot Velvet Coffee,The Hot Velvet Coffee is too strong for my taste.,NEGATIVE,1
+1300,Baguette,"The Baguette is fantastic, a great addition to the menu.",POSITIVE,3
+1301,Quiche,"The Quiche could be better, but it's not bad.",POSITIVE,3
+1302,Cocoa Fantasy Pastry,"The Cocoa Fantasy Pastry is fantastic, a great addition to the menu.",POSITIVE,3
+1303,Croissant,"The Croissant was just what I needed, excellent choice.",POSITIVE,3
+1304,Elaichi Tea,"The Elaichi Tea was just what I needed, excellent choice.",POSITIVE,3
+1305,Classic Lemonade,"The Classic Lemonade is amazing, highly recommend it!",POSITIVE,3
+1306,Bagel,"The Bagel is fantastic, a great addition to the menu.",POSITIVE,3
+1307,Dark Frappe,I didn't enjoy the Dark Frappe as much as I'd hoped.,NEGATIVE,1
+1308,Long Macchiato,"The Long Macchiato exceeded my expectations, will buy again!",POSITIVE,3
+1309,Iced Latte,"The Iced Latte is fantastic, a great addition to the menu.",POSITIVE,3
+1310,Red Velvet Cake Shake,"The Red Velvet Cake Shake is fantastic, a great addition to the menu.",POSITIVE,3
+1311,Long Black,"The Long Black was just what I needed, excellent choice.",POSITIVE,3
+1312,Granola Bar,The Granola Bar is too strong for my taste.,NEGATIVE,1
+1313,Watermelon Granita,The Watermelon Granita is too strong for my taste.,NEGATIVE,1
+1314,Danish,"The Danish was just what I needed, excellent choice.",POSITIVE,3
+1315,Quiche,"The Quiche is amazing, highly recommend it!",POSITIVE,3
+1316,Lemon Cake Shake,I didn't enjoy the Lemon Cake Shake as much as I'd hoped.,NEGATIVE,1
+1317,Green Tea,"Not a fan of the Green Tea, it didn't suit my preferences.",NEGATIVE,1
+1318,Vanilla Cappuccino,The Vanilla Cappuccino is too strong for my taste.,NEGATIVE,1
+1319,Flavoured Ice Cream,"The Flavoured Ice Cream could be better, but it's not bad.",POSITIVE,3
+1320,Ginger Tea,"The Ginger Tea exceeded my expectations, will buy again!",POSITIVE,3
+1321,Cookie,The Cookie is too strong for my taste.,NEGATIVE,1
+1322,Red Eye,The Red Eye is too strong for my taste.,NEGATIVE,1
+1323,Cookie,"Not a fan of the Cookie, it didn't suit my preferences.",NEGATIVE,1
+1324,Cupcake,"The Cupcake could be better, but it's not bad.",POSITIVE,3
+1325,Tacos,"The Tacos is amazing, highly recommend it!",POSITIVE,3
+1326,Tacos,I didn't enjoy the Tacos as much as I'd hoped.,NEGATIVE,1
+1327,Hot Tea Latte,"The Hot Tea Latte is amazing, highly recommend it!",POSITIVE,3
+1328,Cheesecake Shake,"The Cheesecake Shake is amazing, highly recommend it!",POSITIVE,3
+1329,Espresso,"The Espresso exceeded my expectations, will buy again!",POSITIVE,3
+1330,Cookie,"The Cookie was just what I needed, excellent choice.",POSITIVE,3
+1331,Ginger Tea,"The Ginger Tea exceeded my expectations, will buy again!",POSITIVE,3
+1332,Cappuccino,The Cappuccino is too strong for my taste.,NEGATIVE,1
+1333,Watermelon Mojito,"I found the Watermelon Mojito to be just okay, not great.",NEGATIVE,1
+1334,Vanilla Latte,"The Vanilla Latte is fantastic, a great addition to the menu.",POSITIVE,3
+1335,Americano,"The Americano was just what I needed, excellent choice.",POSITIVE,3
+1336,Pizza,"The Pizza is amazing, highly recommend it!",POSITIVE,3
+1337,Brioche,"The Brioche is fantastic, a great addition to the menu.",POSITIVE,3
+1338,Lemon Green Coffee,The Lemon Green Coffee is too strong for my taste.,NEGATIVE,1
+1339,Herbal Tea,"The Herbal Tea exceeded my expectations, will buy again!",POSITIVE,3
+1340,Americano,"The Americano was just what I needed, excellent choice.",POSITIVE,3
+1341,Breve,"The Breve is amazing, highly recommend it!",POSITIVE,3
+1342,Elaichi Tea,"The Elaichi Tea exceeded my expectations, will buy again!",POSITIVE,3
+1343,Vegan Shake,"I found the Vegan Shake to be just okay, not great.",NEGATIVE,1
+1344,Breve,"I found the Breve to be just okay, not great.",NEGATIVE,1
+1345,Sandwich,I didn't enjoy the Sandwich as much as I'd hoped.,NEGATIVE,1
+1346,Croissant,The Croissant is too strong for my taste.,NEGATIVE,1
+1347,Hazelnut Brownie Cake Shake,The Hazelnut Brownie Cake Shake is too strong for my taste.,NEGATIVE,1
+1348,Mousse,"The Mousse could be better, but it's not bad.",POSITIVE,3
+1349,Iced Coffee,"The Iced Coffee is amazing, highly recommend it!",POSITIVE,3
+1350,Scone,"The Scone is amazing, highly recommend it!",POSITIVE,3
+1351,Cutlet,The Cutlet is too strong for my taste.,NEGATIVE,1
+1352,Crunchy Frappe,"The Crunchy Frappe was just what I needed, excellent choice.",POSITIVE,3
+1353,Watermelon Granita,I didn't enjoy the Watermelon Granita as much as I'd hoped.,NEGATIVE,1
+1354,Pizza,The Pizza is too strong for my taste.,NEGATIVE,1
+1355,Cheesecake Shake,"The Cheesecake Shake exceeded my expectations, will buy again!",POSITIVE,3
+1356,Cutlet,"The Cutlet exceeded my expectations, will buy again!",POSITIVE,3
+1357,Lemon Cake Shake,"The Lemon Cake Shake is amazing, highly recommend it!",POSITIVE,3
+1358,Muffin,"I found the Muffin to be just okay, not great.",NEGATIVE,1
+1359,Eclair,"The Eclair is fantastic, a great addition to the menu.",POSITIVE,3
+1360,Crunchy Frappe,"The Crunchy Frappe could be better, but it's not bad.",POSITIVE,3
+1361,Gourmet Belgian Cold Chocolate,"I found the Gourmet Belgian Cold Chocolate to be just okay, not great.",NEGATIVE,1
+1362,Pineapple Delight Pastry,"The Pineapple Delight Pastry is fantastic, a great addition to the menu.",POSITIVE,3
+1363,Iced Tea Latte,"Absolutely loved the Iced Tea Latte, perfect for any day.",POSITIVE,3
+1364,Granola Bar,"The Granola Bar is amazing, highly recommend it!",POSITIVE,3
+1365,Cupcake,"I found the Cupcake to be just okay, not great.",NEGATIVE,1
+1366,Hot Tea Latte,"The Hot Tea Latte exceeded my expectations, will buy again!",POSITIVE,3
+1367,Baguette,"Absolutely loved the Baguette, perfect for any day.",POSITIVE,3
+1368,Salad,"The Salad is amazing, highly recommend it!",POSITIVE,3
+1369,Affogato,"The Affogato is fantastic, a great addition to the menu.",POSITIVE,3
+1370,Cocoa Fantasy Pastry,"The Cocoa Fantasy Pastry exceeded my expectations, will buy again!",POSITIVE,3
+1371,Masala Tea,"The Masala Tea is fantastic, a great addition to the menu.",POSITIVE,3
+1372,Cookie,"Not a fan of the Cookie, it didn't suit my preferences.",NEGATIVE,1
+1373,Espresso,"The Espresso exceeded my expectations, will buy again!",POSITIVE,3
+1374,Earl Grey Orange Tea,"The Earl Grey Orange Tea exceeded my expectations, will buy again!",POSITIVE,3
+1375,Gourmet Belgian Cold Chocolate,"The Gourmet Belgian Cold Chocolate is amazing, highly recommend it!",POSITIVE,3
+1376,Affogato,"I found the Affogato to be just okay, not great.",NEGATIVE,1
+1377,Brownie,"The Brownie is fantastic, a great addition to the menu.",POSITIVE,3
+1378,Hot Velvet Coffee,"Not a fan of the Hot Velvet Coffee, it didn't suit my preferences.",NEGATIVE,1
+1379,Iced Mocha,"The Iced Mocha is amazing, highly recommend it!",POSITIVE,3
+1380,Tropical Iceberg,"I found the Tropical Iceberg to be just okay, not great.",NEGATIVE,1
+1381,Herbal Tea,"Absolutely loved the Herbal Tea, perfect for any day.",POSITIVE,3
+1382,Popcorn,"The Popcorn exceeded my expectations, will buy again!",POSITIVE,3
+1383,Cheesecake Shake,"I found the Cheesecake Shake to be just okay, not great.",NEGATIVE,1
+1384,Masala Tea,"The Masala Tea was just what I needed, excellent choice.",POSITIVE,3
+1385,Long Macchiato,"The Long Macchiato could be better, but it's not bad.",POSITIVE,3
+1386,Lemon Cake Shake,"Absolutely loved the Lemon Cake Shake, perfect for any day.",POSITIVE,3
+1387,Iced Mocha,"The Iced Mocha is fantastic, a great addition to the menu.",POSITIVE,3
+1388,Breve,"The Breve is fantastic, a great addition to the menu.",POSITIVE,3
+1389,Classic Lemonade,"The Classic Lemonade could be better, but it's not bad.",POSITIVE,3
+1390,Sandwich,"The Sandwich was just what I needed, excellent choice.",POSITIVE,3
+1391,Alphonso Mango Frappe,"The Alphonso Mango Frappe could be better, but it's not bad.",POSITIVE,3
+1392,Vanilla Latte,"The Vanilla Latte is amazing, highly recommend it!",POSITIVE,3
+1393,Vanilla Latte,"The Vanilla Latte exceeded my expectations, will buy again!",POSITIVE,3
+1394,Granola Bar,"The Granola Bar was just what I needed, excellent choice.",POSITIVE,3
+1395,Soup,I didn't enjoy the Soup as much as I'd hoped.,NEGATIVE,1
+1396,Danish,"Absolutely loved the Danish, perfect for any day.",POSITIVE,3
+1397,Breve,"Not a fan of the Breve, it didn't suit my preferences.",NEGATIVE,1
+1398,Vanilla Cappuccino,"Not a fan of the Vanilla Cappuccino, it didn't suit my preferences.",NEGATIVE,1
+1399,Donut,"The Donut is amazing, highly recommend it!",POSITIVE,3
+1400,Pineapple Delight Pastry,"Absolutely loved the Pineapple Delight Pastry, perfect for any day.",POSITIVE,3
+1401,Iced Cappuccino,"Not a fan of the Iced Cappuccino, it didn't suit my preferences.",NEGATIVE,1
+1402,Tacos,"The Tacos is amazing, highly recommend it!",POSITIVE,3
+1403,Lemon Green Coffee,"I found the Lemon Green Coffee to be just okay, not great.",NEGATIVE,1
+1404,Burrito,"The Burrito is amazing, highly recommend it!",POSITIVE,3
+1405,Peach Iced Tea,"Not a fan of the Peach Iced Tea, it didn't suit my preferences.",NEGATIVE,1
+1406,Herbal Tea,"The Herbal Tea is amazing, highly recommend it!",POSITIVE,3
+1407,Red Eye,"The Red Eye is fantastic, a great addition to the menu.",POSITIVE,3
+1408,Muffin,"I found the Muffin to be just okay, not great.",NEGATIVE,1
+1409,Hot Tea Latte,"The Hot Tea Latte was just what I needed, excellent choice.",POSITIVE,3
+1410,Pudding,"The Pudding is fantastic, a great addition to the menu.",POSITIVE,3
+1411,Flavoured Ice Cream,"Not a fan of the Flavoured Ice Cream, it didn't suit my preferences.",NEGATIVE,1
+1412,Pudding,"Absolutely loved the Pudding, perfect for any day.",POSITIVE,3
+1413,Iced Latte,I didn't enjoy the Iced Latte as much as I'd hoped.,NEGATIVE,1
+1414,Earl Grey Orange Tea,"I found the Earl Grey Orange Tea to be just okay, not great.",NEGATIVE,1
+1415,Soup,"The Soup exceeded my expectations, will buy again!",POSITIVE,3
+1416,Herbal Tea,"The Herbal Tea is amazing, highly recommend it!",POSITIVE,3
+1417,Long Macchiato,The Long Macchiato is too strong for my taste.,NEGATIVE,1
+1418,Croissant,"The Croissant exceeded my expectations, will buy again!",POSITIVE,3
+1419,Vegan Shake,"The Vegan Shake was just what I needed, excellent choice.",POSITIVE,3
+1420,Cocoa Fantasy Pastry,I didn't enjoy the Cocoa Fantasy Pastry as much as I'd hoped.,NEGATIVE,1
+1421,Peach Iced Tea,"Not a fan of the Peach Iced Tea, it didn't suit my preferences.",NEGATIVE,1
+1422,Macaron,"The Macaron is amazing, highly recommend it!",POSITIVE,3
+1423,Classic Lemonade,"Not a fan of the Classic Lemonade, it didn't suit my preferences.",NEGATIVE,1
+1424,Tacos,"The Tacos could be better, but it's not bad.",POSITIVE,3
+1425,Cookie,"The Cookie is fantastic, a great addition to the menu.",POSITIVE,3
+1426,Pizza,"The Pizza could be better, but it's not bad.",POSITIVE,3
+1427,Green Tea,"Absolutely loved the Green Tea, perfect for any day.",POSITIVE,3
+1428,Muffin,"Not a fan of the Muffin, it didn't suit my preferences.",NEGATIVE,1
+1429,Macaron,"Not a fan of the Macaron, it didn't suit my preferences.",NEGATIVE,1
+1430,Long Macchiato,"The Long Macchiato is amazing, highly recommend it!",POSITIVE,3
+1431,Crackling Brownie Pastry,"The Crackling Brownie Pastry is fantastic, a great addition to the menu.",POSITIVE,3
+1432,Iced Tea Latte,"The Iced Tea Latte was just what I needed, excellent choice.",POSITIVE,3
+1433,Turmeric Ginger Cappuccino,I didn't enjoy the Turmeric Ginger Cappuccino as much as I'd hoped.,NEGATIVE,1
+1434,Brownie,"The Brownie exceeded my expectations, will buy again!",POSITIVE,3
+1435,Burrito,"The Burrito was just what I needed, excellent choice.",POSITIVE,3
+1436,Peach Iced Tea,"Not a fan of the Peach Iced Tea, it didn't suit my preferences.",NEGATIVE,1
+1437,Earl Grey Orange Tea,"The Earl Grey Orange Tea exceeded my expectations, will buy again!",POSITIVE,3
+1438,Vanilla Latte,"Absolutely loved the Vanilla Latte, perfect for any day.",POSITIVE,3
+1439,Long Black,I didn't enjoy the Long Black as much as I'd hoped.,NEGATIVE,1
+1440,Flavoured Ice Cream,"I found the Flavoured Ice Cream to be just okay, not great.",NEGATIVE,1
+1441,Cake,"I found the Cake to be just okay, not great.",NEGATIVE,1
+1442,Mousse,"The Mousse was just what I needed, excellent choice.",POSITIVE,3
+1443,Vegan Shake,"The Vegan Shake is amazing, highly recommend it!",POSITIVE,3
+1444,Soup,I didn't enjoy the Soup as much as I'd hoped.,NEGATIVE,1
+1445,Alphonso Mango Frappe,"The Alphonso Mango Frappe could be better, but it's not bad.",POSITIVE,3
+1446,Crunchy Frappe,"Absolutely loved the Crunchy Frappe, perfect for any day.",POSITIVE,3
+1447,Cupcake,"I found the Cupcake to be just okay, not great.",NEGATIVE,1
+1448,Lemon Green Coffee,"Absolutely loved the Lemon Green Coffee, perfect for any day.",POSITIVE,3
+1449,Cocoa Fantasy Pastry,I didn't enjoy the Cocoa Fantasy Pastry as much as I'd hoped.,NEGATIVE,1
+1450,Vienna,"The Vienna was just what I needed, excellent choice.",POSITIVE,3
+1451,Mousse,"The Mousse is fantastic, a great addition to the menu.",POSITIVE,3
+1452,Panini,"I found the Panini to be just okay, not great.",NEGATIVE,1
+1453,Burrito,"Absolutely loved the Burrito, perfect for any day.",POSITIVE,3
+1454,Cupcake,"The Cupcake could be better, but it's not bad.",POSITIVE,3
+1455,Red Eye,"Absolutely loved the Red Eye, perfect for any day.",POSITIVE,3
+1456,Tropical Iceberg,"Absolutely loved the Tropical Iceberg, perfect for any day.",POSITIVE,3
+1457,Bagel,"The Bagel is amazing, highly recommend it!",POSITIVE,3
+1458,Popcorn,"The Popcorn is amazing, highly recommend it!",POSITIVE,3
+1459,Red Velvet Cake Shake,"I found the Red Velvet Cake Shake to be just okay, not great.",NEGATIVE,1
+1460,Elaichi Tea,The Elaichi Tea is too strong for my taste.,NEGATIVE,1
+1461,Vanilla Latte,"The Vanilla Latte was just what I needed, excellent choice.",POSITIVE,3
+1462,Iced Coffee,"Not a fan of the Iced Coffee, it didn't suit my preferences.",NEGATIVE,1
+1463,Macchiato,"The Macchiato could be better, but it's not bad.",POSITIVE,3
+1464,Masala Tea,"Absolutely loved the Masala Tea, perfect for any day.",POSITIVE,3
+1465,Cafe Latte,"The Cafe Latte exceeded my expectations, will buy again!",POSITIVE,3
+1466,Baguette,The Baguette is too strong for my taste.,NEGATIVE,1
+1467,Iced Mocha,The Iced Mocha is too strong for my taste.,NEGATIVE,1
+1468,Brioche,"The Brioche is amazing, highly recommend it!",POSITIVE,3
+1469,Mousse,I didn't enjoy the Mousse as much as I'd hoped.,NEGATIVE,1
+1470,Cafe Latte,"The Cafe Latte was just what I needed, excellent choice.",POSITIVE,3
+1471,Eclair,I didn't enjoy the Eclair as much as I'd hoped.,NEGATIVE,1
+1472,Vanilla Cappuccino,"The Vanilla Cappuccino exceeded my expectations, will buy again!",POSITIVE,3
+1473,Lemon Green Coffee,"Absolutely loved the Lemon Green Coffee, perfect for any day.",POSITIVE,3
+1474,Macchiato,I didn't enjoy the Macchiato as much as I'd hoped.,NEGATIVE,1
+1475,Crackling Brownie Pastry,"The Crackling Brownie Pastry is fantastic, a great addition to the menu.",POSITIVE,3
+1476,Ginger Tea,"I found the Ginger Tea to be just okay, not great.",NEGATIVE,1
+1477,Brioche,"The Brioche exceeded my expectations, will buy again!",POSITIVE,3
+1478,Lemon Cake Shake,I didn't enjoy the Lemon Cake Shake as much as I'd hoped.,NEGATIVE,1
+1479,Muffin,"The Muffin is fantastic, a great addition to the menu.",POSITIVE,3
+1480,Flat White,"I found the Flat White to be just okay, not great.",NEGATIVE,1
+1481,Hot Velvet Coffee,"The Hot Velvet Coffee is fantastic, a great addition to the menu.",POSITIVE,3
+1482,Iced Coffee,"The Iced Coffee could be better, but it's not bad.",POSITIVE,3
+1483,Baguette,"The Baguette could be better, but it's not bad.",POSITIVE,3
+1484,Flat White,"I found the Flat White to be just okay, not great.",NEGATIVE,1
+1485,Crunchy Frappe,"Absolutely loved the Crunchy Frappe, perfect for any day.",POSITIVE,3
+1486,Pizza,"The Pizza is fantastic, a great addition to the menu.",POSITIVE,3
+1487,Cortado,"The Cortado exceeded my expectations, will buy again!",POSITIVE,3
+1488,Herbal Tea,"The Herbal Tea was just what I needed, excellent choice.",POSITIVE,3
+1489,Long Black,"The Long Black exceeded my expectations, will buy again!",POSITIVE,3
+1490,Cake,"Absolutely loved the Cake, perfect for any day.",POSITIVE,3
+1491,Burrito,I didn't enjoy the Burrito as much as I'd hoped.,NEGATIVE,1
+1492,Iced Tea Latte,"The Iced Tea Latte exceeded my expectations, will buy again!",POSITIVE,3
+1493,Dark Frappe,"I found the Dark Frappe to be just okay, not great.",NEGATIVE,1
+1494,Red Velvet Cake Shake,"Not a fan of the Red Velvet Cake Shake, it didn't suit my preferences.",NEGATIVE,1
+1495,Eclair,I didn't enjoy the Eclair as much as I'd hoped.,NEGATIVE,1
+1496,Pasta,"Not a fan of the Pasta, it didn't suit my preferences.",NEGATIVE,1
+1497,Vanilla Cappuccino,"The Vanilla Cappuccino is amazing, highly recommend it!",POSITIVE,3
+1498,Bagel,"The Bagel is amazing, highly recommend it!",POSITIVE,3
+1499,Quiche,"The Quiche was just what I needed, excellent choice.",POSITIVE,3
+1500,Baguette,"The Baguette could be better, but it's not bad.",POSITIVE,3
+1501,Iced Tea Latte,The Iced Tea Latte is too strong for my taste.,NEGATIVE,1
+1502,Elaichi Tea,"The Elaichi Tea could be better, but it's not bad.",POSITIVE,3
+1503,Cafe Latte,"Absolutely loved the Cafe Latte, perfect for any day.",POSITIVE,3
+1504,Muffin,"The Muffin could be better, but it's not bad.",POSITIVE,3
+1505,Dark Frappe,The Dark Frappe is too strong for my taste.,NEGATIVE,1
+1506,Earl Grey Orange Tea,"The Earl Grey Orange Tea is fantastic, a great addition to the menu.",POSITIVE,3
+1507,Muffin,"The Muffin exceeded my expectations, will buy again!",POSITIVE,3
+1508,Hot Tea Latte,"Absolutely loved the Hot Tea Latte, perfect for any day.",POSITIVE,3
+1509,Cappuccino,"The Cappuccino is fantastic, a great addition to the menu.",POSITIVE,3
+1510,Pasta,"I found the Pasta to be just okay, not great.",NEGATIVE,1
+1511,Iced Coffee,"Not a fan of the Iced Coffee, it didn't suit my preferences.",NEGATIVE,1
+1512,Hot Velvet Coffee,"The Hot Velvet Coffee exceeded my expectations, will buy again!",POSITIVE,3
+1513,Long Black,"I found the Long Black to be just okay, not great.",NEGATIVE,1
+1514,Salad,"The Salad is amazing, highly recommend it!",POSITIVE,3
+1515,Sandwich,"Not a fan of the Sandwich, it didn't suit my preferences.",NEGATIVE,1
+1516,Bagel,"The Bagel exceeded my expectations, will buy again!",POSITIVE,3
+1517,Affogato,"I found the Affogato to be just okay, not great.",NEGATIVE,1
+1518,Donut,"The Donut is fantastic, a great addition to the menu.",POSITIVE,3
+1519,Peach Iced Tea,The Peach Iced Tea is too strong for my taste.,NEGATIVE,1
+1520,Cappuccino,"I found the Cappuccino to be just okay, not great.",NEGATIVE,1
+2001,Cake,Just satisfactory.,NEUTRAL,2
+2002,Filter Coffee,"No surprises here, just standard.",NEUTRAL,2
+2003,Cake,"Meh, just fine.",NEUTRAL,2
+2004,Croissant,It did not stand out.,NEUTRAL,2
+2005,Granola Bar,A perfectly average offering.,NEUTRAL,2
+2006,Cake,Just satisfactory.,NEUTRAL,2
+2007,Croissant,Lacking in a standout quality.,NEUTRAL,2
+2008,Pizza,"It did the job, nothing more.",NEUTRAL,2
+2009,Quiche,"Not too bad, not too good.",NEUTRAL,2
+2010,Quiche,Serviceable but nothing remarkable.,NEUTRAL,2
+2011,Espresso,Just satisfactory.,NEUTRAL,2
+2012,Filter Coffee,"Nothing to complain about, nothing to praise.",NEUTRAL,2
+2013,Salad,"It did the job, nothing more.",NEUTRAL,2
+2014,Salad,Indifferent to this.,NEUTRAL,2
+2015,Croissant,Indifferent to this.,NEUTRAL,2
+2016,Granola Bar,Moderately acceptable.,NEUTRAL,2
+2017,Quiche,An unmemorable experience.,NEUTRAL,2
+2018,Granola Bar,Hard to say much about it.,NEUTRAL,2
+2019,Cake,Just satisfactory.,NEUTRAL,2
+2020,Quiche,Hard to say much about it.,NEUTRAL,2
+2021,Salad,Average experience.,NEUTRAL,2
+2022,Cake,"Nothing to complain about, nothing to praise.",NEUTRAL,2
+2023,Filter Coffee,Hard to say much about it.,NEUTRAL,2
+2024,Croissant,Lacking in a standout quality.,NEUTRAL,2
+2025,Espresso,Neither here nor there.,NEUTRAL,2
+2026,Cake,It's fine.,NEUTRAL,2
+2027,Granola Bar,A perfectly average offering.,NEUTRAL,2
+2028,Pizza,"Not great, not terrible.",NEUTRAL,2
+2029,Pizza,"No surprises here, just standard.",NEUTRAL,2
+2030,Salad,Neither satisfying nor disappointing.,NEUTRAL,2
