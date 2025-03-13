@@ -18,7 +18,7 @@ const RecommendationForm = () => {
       // Send the request to the backend with session index
       const response = await axios.post(
         'http://localhost:5000/recommend', // Flask server endpoint
-        { user_id: userId, session_index: sessionIndex }, // Include session index in the request
+        {  session_index: sessionIndex }, // Include session index in the request
         { responseType: 'blob' } // Expect a binary response (PDF)
       );
 
@@ -46,15 +46,7 @@ const RecommendationForm = () => {
   return (
     <div>
       <form className='recommend' onSubmit={handleSubmit}>
-        <label>
-          User ID:
-          <input
-            type="text"
-            value={userId}
-            onChange={(e) => setUserId(e.target.value)}
-            required
-          />
-        </label>
+      
         <button type="submit" disabled={loading || finished}>
           {loading ? 'Loading...' : 'Download Menu Card'}
         </button>

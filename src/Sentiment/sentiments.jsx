@@ -85,7 +85,7 @@ const SentimentForm = () => {
       </form>
       {loading && <p className="loading">Loading...</p>}
       {error && <p className="error">{error}</p>}
-      {sentiment && <p className="sentiment-result">Sentiment: {sentiment}</p>}
+      {sentiment && <p className="sentiment-result">{sentiment}</p>}
     </div>
   );
 };

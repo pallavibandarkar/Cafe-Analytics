@@ -12,7 +12,7 @@ export default function Welcome() {
     // Navigation functions for each button
     const goToTransactions = () => navigate("/transactions");
     const goToReviews = () => navigate("/reviews");
-    const goToSentiment = () => navigate("/sentiment");
+    const goToSentiment = () => navigate("/s");
     const goToRecommend = () => navigate("/recommend");
 
     return (
@@ -27,10 +27,11 @@ export default function Welcome() {
             {/* Debugging: Ensure the buttons are being displayed */}
             {username && (
                 <div className="navigation-buttons">
-                    <button onClick={goToTransactions}>Go to Transactions</button>
-                    <button onClick={goToReviews}>Go to Reviews</button>
+                    
                     <button onClick={goToSentiment}>Go to Sentiment</button>
                     <button onClick={goToRecommend}>Go to Recommend</button>
+                    <button onClick={goToTransactions}>Go to Transactions</button>
+                    <button onClick={goToReviews}>Go to Reviews</button>
                 </div>
             )}
         </div>
