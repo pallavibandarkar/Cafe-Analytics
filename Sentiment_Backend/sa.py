@@ -91,4 +91,5 @@ def get_sentiment_data():
             "Negative": int(sentiments.get("Negative", 0)),
             "Neutral": int(sentiments.get("Neutral", 0)),
         }
+        print(result)
     return result
