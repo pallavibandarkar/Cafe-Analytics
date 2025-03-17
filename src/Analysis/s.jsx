@@ -6,7 +6,7 @@ const SentimentAnalysis = () => {
   const [sentimentData, setSentimentData] = useState({});
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/sentiment-data")
+    fetch("http://localhost:8080/sentiment-data")
       .then((res) => res.json())
       .then((data) => setSentimentData(data))
       .catch((err) => console.error("Error fetching data:", err));
