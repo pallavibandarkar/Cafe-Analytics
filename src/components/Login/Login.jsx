@@ -83,10 +83,10 @@ export default function Login({ setIsLoggedIn, setIsLoginPopupVisible }) {
 
                     <label htmlFor="password"><b>Password:</b></label>
                     <input placeholder="Enter Password" name="password" id="password" type="password" value={data.password} autoComplete={loginState === "Login" ? "current-password" : "new-password"} onChange={onChaneHandeler} />
-
+                  
                     <button>{loginState === "Login" ? "Login" : "Create an account"}</button>
                 </div>
-
+               
                 <div className="login-popup-condition">
                     <input
                         type="checkbox"

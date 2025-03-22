@@ -1,32 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./menu.css";
-const coffeeItems = {
-  "Espresso": "Espresso.jpg",
-  "Red Eye": "Red_Eye.jpg",
-  "Black Eye": "Black_eye.jpg",
-  "Americano": "Americano.jpg",
-  "Long Black": "Long_Black_Coffee.jpg",
-  "Macchiato": "Macchiato.jpg",
-  "Long Macchiato": "Long_Macchiato.jpg",
-  "Cortado": "Cortado.jpg",
-  "Breve": "Breve.jpg",
-  "Cappuccino": "Cappuccino.jpg",
-  "Flat White": "Flat_White.jpg",
-  "Cafe Latte": "Cafe_Latte.jpg",
-  "Iced Mocha": "Iced_Mocha.jpg",
-  "Vienna": "Vienna.jpg",
-  "Affogato": "Affogato.jpg",
-  "Iced Coffee": "Iced_Coffee.jpg",
-  "Hot Velvet Coffee": "Hot_Velvet_Coffee.jpg",
-  "Lemon Green Coffee": "Lemon_Green_Coffee.jpg",
-  "Filter Coffee": "Filter_Coffee.jpg",
-  "Vanilla Latte": "Vanilla_Latte.jpg",
-  "Vanilla Cappuccino": "Vanilla_Cappuccino.jpg",
-  "Turmeric Ginger Cappuccino": "Turmeric_Ginger_Cappuccino.jpg",
-  "Iced Cappuccino": "Iced_Cappuccino.jpg",
-  "Iced Latte": "Iced_Latte.jpg"
-};
+
 const RecommendationForm = () => {
   const [recommendations, setRecommendations] = useState([]);
 
@@ -78,14 +53,11 @@ const downloadPDF = async () => {
         Download Menu Card PDF
       </button>
       </div>
-      <div className="coffee-grid">
+      <ul>
         {recommendations.map((coffee, index) => (
-          <div key={index} className="coffee-item">
-            <img src={`/images/${coffeeItems[coffee]}`} alt={coffee} />
-            <p>{coffee}</p>
-          </div>
+          <li key={index}>{coffee}</li>
         ))}
-      </div>
+      </ul>
       
     </div>
   );

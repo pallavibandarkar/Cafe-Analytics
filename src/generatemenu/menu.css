@@ -1,18 +1,43 @@
+
 .button-container {
   display: flex;
-  justify-content: center; /* Center the buttons */
-  gap: 20px; /* Space between buttons */
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.reccomend,
+.recommend, .download {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recommend {
+  background-color: #ff9800;
+  color: white;
+}
+
 .download {
-   /* Makes both buttons equal width */
-    align-items: center;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
-    flex: 1; /* Input spans the remaining width */
-  
+  background-color: #4caf50;
+  color: white;
+}
+
+.coffee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.coffee-item {
+  text-align: center;
+}
+
+.coffee-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
 }

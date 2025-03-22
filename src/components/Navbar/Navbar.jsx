@@ -54,7 +54,8 @@ export default function Navbar({ isLoggedIn, setIsLoggedIn, setIsLoginPopupVisib
             {isLoggedIn && !isFeedbackUser && (
                 <ul className="Nav-menu">
                     <li><Link to="/welcome">Home</Link></li>
-                    <li><Link to="#">Insights Dashboard</Link></li>
+                    <li><a href="http://127.0.0.1:5001" target="_blank" rel="noopener noreferrer">Insights Dashboard</a></li>
+
                 </ul>
             )}
 

@@ -28,10 +28,11 @@ export default function Welcome() {
             {username && (
                 <div className="navigation-buttons">
                     
-                    <button onClick={goToSentiment}>Go to Sentiment</button>
-                    <button onClick={goToRecommend}>Go to Recommend</button>
+                    <button onClick={goToSentiment}>Product Performance</button>
+                    <button onClick={goToRecommend}>Product Recommendations</button>
+                    {/*
                     <button onClick={goToTransactions}>Go to Transactions</button>
-                    <button onClick={goToReviews}>Go to Reviews</button>
+                    <button onClick={goToReviews}>Go to Reviews</button> */}
                 </div>
             )}
         </div>

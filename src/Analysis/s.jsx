@@ -21,7 +21,7 @@ const SentimentAnalysis = () => {
 
   return (
     <>
-      <h1 style={{ textAlign: "center", marginBottom: "20px" }}>Sentiment Analysis</h1>
+      <h1 style={{ textAlign: "center", marginBottom: "20px" }}>PRODUCT PERFORMANCE</h1>
       <div
         style={{
           display: "grid",
