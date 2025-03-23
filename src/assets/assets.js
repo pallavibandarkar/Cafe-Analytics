@@ -9,6 +9,9 @@ import review2 from "./review2.png"
 import review3 from "./review3.png"
 import review4 from "./review4.png"
 import team_photo from "./team_photo.jpg"
+import Product_Performance from "./Product_Performance.jpg"
+import mba1 from "./mba1.jpg"
+import Analytic_Dashboard from "./Analytic_Dashboard.jpg"
 
 export const assets={
     Coffe_Logo,
@@ -22,6 +25,9 @@ export const assets={
     review3,
     review4,
     team_photo,
+    Product_Performance,
+    mba1,
+    Analytic_Dashboard,
 }
 
 export const features=[

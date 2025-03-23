@@ -43,7 +43,7 @@ function App() {
                 <Route path="/transactions" element={<TransactionForm/>}/>
                 <Route path="/recommend" element={<RecommendationForm/>} />
                 </Route>
-                  {/* Add this route */}
+                
             </Routes>
         </>
     );

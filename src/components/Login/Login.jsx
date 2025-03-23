@@ -61,9 +61,9 @@ export default function Login({ setIsLoggedIn, setIsLoginPopupVisible }) {
         <div className="login">
             <form className="login-form" onSubmit={submitForm}>
                 <div className="login-popup-title">
-                    <p>{loginState}</p>
+                    <p >{loginState}</p>
                     <img 
-                        onClick={() => setIsLoginPopupVisible(false)} // Close the popup
+                        onClick={() => setIsLoginPopupVisible(false)} 
                         src={assets.cross_icon} 
                     />
                 </div>
@@ -84,7 +84,7 @@ export default function Login({ setIsLoggedIn, setIsLoginPopupVisible }) {
                     <label htmlFor="password"><b>Password:</b></label>
                     <input placeholder="Enter Password" name="password" id="password" type="password" value={data.password} autoComplete={loginState === "Login" ? "current-password" : "new-password"} onChange={onChaneHandeler} />
                   
-                    <button>{loginState === "Login" ? "Login" : "Create an account"}</button>
+                    
                 </div>
                
                 <div className="login-popup-condition">
@@ -95,6 +95,7 @@ export default function Login({ setIsLoggedIn, setIsLoginPopupVisible }) {
                     />
                     <p>By continuing, I agree to the terms of use and privacy policy</p>
                 </div>
+                <button className="submitbtn">{loginState === "Login" ? "Login" : "Create an account"}</button>
                 {loginState === "Login" ? (
                     <p>Create an account <span onClick={() => setLoginState("Sign Up")}><b>Click here</b></span></p>
                 ) : (

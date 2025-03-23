@@ -19,6 +19,10 @@
     color: black;
     margin-top:2px;
 }
+.login-popup-title p{
+    font-weight: 700;
+    font-size: 20px;
+}
 .login-form .credentials{
     display: flex;
     flex-direction: column;
@@ -30,20 +34,24 @@
     border: 1px solid gray;
     border-radius: 10px;
     margin:3px;
-    width: 90%;
+    width: 95%;
     border: 2px solid chocolate;
 }
 
 .login-form .credentials label{
     margin:3px;
 }
-.login-form .credentials button{
-    width: 90%;
-    background-color: coral;
+.submitbtn{
+    width: 95% !important;
+    background-color: coral !important;
     border-radius: 12px;
     padding: 10px;
     border: none;
-    margin-top: 20px;
+    margin-top: 5px;
+}
+
+.submitbtn:hover{
+    width: 96% !important;
 }
 
 .login-popup-condition{
@@ -52,6 +60,7 @@
 .login-popup-condition input{
     margin-right: 15px;
 }
+
 
 span{
     color: chocolate;
