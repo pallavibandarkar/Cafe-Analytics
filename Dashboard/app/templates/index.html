@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Analytics</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; background-color: #f9f9f9; text-align: center;margin-top:200px;">
+
+    <h1 style="color: #4CAF50; font-size: 2.5rem;">Cafe Analytics</h1>
+
+    <p style="font-size: 1.2rem;">Total Revenue: ₹{{ "%.2f"|format(total_revenue) }}</p>
+    <p style="font-size: 1.2rem;">Average Transaction: ₹{{ "%.2f"|format(avg_transaction) }}</p>
+    <p style="font-size: 1.2rem;">Total Transactions: {{ total_transactions }}</p>
+
+    <a href="/dash/" style="display: inline-block; padding: 0.8rem 1.5rem; margin: 1rem; text-decoration: none; background-color: #4CAF50; color: white; border-radius: 8px;">View Detailed Dashboard</a>
+
+</body>
+
+</html>
