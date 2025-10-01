@@ -147,50 +147,9 @@ def init_dashboard(server, csv_file):
     categoryarray=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
     title="Day of Week"
 )
-# Forecast next 30 days
-  
 
-# Forecast next 30 days
-    future = model.make_future_dataframe(periods=12, freq="D")
-    forecast = model.predict(future)
 
-# Line chart daily forecast
-    fig_forecast_daily = px.line(
-    forecast,
-    x="ds",
-    y="yhat",
-    title="Daily Revenue Forecast (Next 30 Days)",
-    template="plotly_dark"
-)
 
-# Format x-axis to show daily ticks more cleanly
-    fig_forecast_daily.update_xaxes(
-    dtick="D1",                # one tick per day
-    tickformat="%d",        # e.g., Sep 27
-    title="Date"
-)
-    forecast_future = forecast.tail(30).copy()
-
-# Add week number within the month
-    forecast_future["week_of_month"] = (
-    ((forecast_future["ds"].dt.day - 1) // 7) + 1
-)
-
-# Add a label like "Week 1", "Week 2", ...
-    forecast_future["week_label"] = "Week " + forecast_future["week_of_month"].astype(str)
-
-# Aggregate forecast by week
-    weekly_forecast = forecast_future.groupby("week_label")["yhat"].sum().reset_index()
-
-# Line chart with weeks as x-axis
-    fig_forecast_weekly = px.line(
-    weekly_forecast,
-    x="week_label",
-    y="yhat",
-    title="Weekly Revenue Forecast (Next Month)",
-    template="plotly_dark"
-)
-    
     # -------------------- Layout -------------------- #
     dash_app.layout = dbc.Container([
         dbc.NavbarSimple(
