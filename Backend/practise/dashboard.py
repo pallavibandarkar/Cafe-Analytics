@@ -99,43 +99,7 @@ def init_dashboard(server, csv_file):
         title='Customer Segmentation: Spend vs Transactions'
     )
 
-    # -------------------- Market Basket Analysis -------------------- #
-    df['Items_list'] = df['Items'].apply(lambda x: x.split(', '))
-    te = TransactionEncoder()
-    te_array = te.fit(df['Items_list']).transform(df['Items_list'])
-    df_encoded = pd.DataFrame(te_array, columns=te.columns_)
-    frequent_itemsets = fpgrowth(df_encoded, min_support=0.003, use_colnames=True, max_len=3)
-    rules = association_rules(frequent_itemsets, metric="confidence", min_threshold=0.1)
-    rules["antecedents"] = rules["antecedents"].apply(lambda x: list(x))
-    rules["consequents"] = rules["consequents"].apply(lambda x: list(x))
-    frequent_itemsets['itemsets_str'] = frequent_itemsets['itemsets'].apply(lambda x: ', '.join(list(x)))
-
-    fig_frequent_itemsets = px.bar(frequent_itemsets.nlargest(10, 'support'),
-                                   x='itemsets_str', y='support',
-                                   title='Top Frequent Itemsets', template='plotly_dark')
-
-    cyto_elements = []
-    for _, row in rules.iterrows():
-        antecedents = ','.join(row['antecedents'])
-        consequents = ','.join(row['consequents'])
-
-        cyto_elements.append({'data': {'id': antecedents, 'label': antecedents}})
-        cyto_elements.append({'data': {'id': consequents, 'label': consequents}})
-        cyto_elements.append({'data': {'source': antecedents, 'target': consequents, 'label': f"Confidence: {row['confidence']:.2f}"}})
-
-    # Remove duplicate nodes
-    unique_nodes = []
-    node_ids = set()
-    for element in cyto_elements:
-        if 'id' in element['data']:
-            node_id = element['data']['id']
-            if node_id not in node_ids:
-                unique_nodes.append(element)
-                node_ids.add(node_id)
-
-    edges = [element for element in cyto_elements if 'source' in element['data']]
-    cyto_elements = unique_nodes + edges
-
+    
 
     # -------------------- Revenue Forecast -------------------- #
     """forecast_df = df.groupby("date")["Revenue"].sum().reset_index()
