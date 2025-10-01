@@ -20,7 +20,7 @@ app.secret_key = secrets.token_hex(16)
 CORS(app)
 # Load reviews and cafe menu data
  # Contains "TransactionID" and "Items" columns
-client = MongoClient(MongoUrl)
+client = MongoClient("mongodburl")
 db = client.get_default_database()
 reviews_collection = db['reviews']
 transactions_collection = db['transactions']
@@ -59,6 +59,7 @@ def get_association_rules():
         return pd.DataFrame()
 
     rules = association_rules(frequent_itemsets, metric="confidence", min_threshold=0.8)
+    print("Association Rules Generated:", rules)
     return rules
 
 # Filter recommendations based on positive sentiment and association rules
@@ -348,7 +349,9 @@ def get_sentiment_data():
 def sentiment_data():
     data = get_sentiment_data()
     return jsonify(data)
-
+from dashboard import init_dashboard  # Import your init_dashboard from dashboard.py
+csv_file = "corrected_transactions.csv"  # Path to your CSV
+dash_app_server = init_dashboard(app, csv_file) 
 # Flask route to predict the rating for a specific product
 
 if __name__ == "__main__":

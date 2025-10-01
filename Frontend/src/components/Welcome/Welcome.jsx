@@ -17,7 +17,8 @@ export default function Welcome() {
     const goToSentiment = () => navigate("/s");
     const goToRecommend = () => navigate("/recommend");
     const handleNavigation = () => {
-        window.location.href = 'http://127.0.0.1:5001';
+       window.location.href = 'http://127.0.0.1:5000/dash/';
+    
       };
     return (
         <div className="welcome-page">
