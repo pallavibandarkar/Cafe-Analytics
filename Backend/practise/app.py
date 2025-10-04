@@ -19,8 +19,26 @@ app = Flask(__name__)
 app.secret_key = secrets.token_hex(16) 
 CORS(app)
 # Load reviews and cafe menu data
+import jwt
+from flask import request, redirect
+
+
+
+@app.before_request
+def protect_dash():
+    # Protect all /dash endpoints
+    if request.path.startswith('/dash'):
+        token = request.args.get('token')
+        if not token:
+            return redirect("http://localhost:5173/welcome")
+        try:
+            payload = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
+        except jwt.ExpiredSignatureError:
+            return "Token expired", 401
+        except jwt.InvalidTokenError:
+            return "Invalid token", 401
  # Contains "TransactionID" and "Items" columns
-client = MongoClient("mongodburl")
+client = MongoClient("mongourl")
 db = client.get_default_database()
 reviews_collection = db['reviews']
 transactions_collection = db['transactions']
@@ -349,9 +367,11 @@ def get_sentiment_data():
 def sentiment_data():
     data = get_sentiment_data()
     return jsonify(data)
+ # Use the same secret as your Node.js backend
 from dashboard import init_dashboard  # Import your init_dashboard from dashboard.py
 csv_file = "corrected_transactions.csv"  # Path to your CSV
 dash_app_server = init_dashboard(app, csv_file) 
+
 # Flask route to predict the rating for a specific product
 
 if __name__ == "__main__":

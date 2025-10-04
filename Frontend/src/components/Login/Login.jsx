@@ -32,14 +32,19 @@ export default function Login({ setIsLoggedIn, setIsLoginPopupVisible }) {
         try {
             let response;
             if (loginState === "Login") {
-                response = await axios.post("http://localhost:8080/login", data, {
+                response = await axios.post("http://localhost:8080/api/auth/login", data, {
                     headers: {
                         "Content-Type": "application/json",
                     },
                 });
                 console.log("Login successful:", response.data);
+                console.log("Received body",response);
                 if (response.data.success) {
+                    // Store both username and token in localStorage
                     localStorage.setItem('username', data.username);
+                    if (response.data.token) {
+                        localStorage.setItem('token', response.data.token);
+                    }
                     setIsLoggedIn(true); // Update the logged-in state
                     setIsLoginPopupVisible(false); // Hide login popup after successful login
                     navigate("/welcome"); // Redirect to a welcome page after successful login

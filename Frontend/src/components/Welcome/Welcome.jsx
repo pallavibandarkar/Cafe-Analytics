@@ -1,36 +1,79 @@
-import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import './w.css'
 import { assets } from "../../assets/assets.js";
 
-export default function Welcome() {
+function Welcome() {
     const username = localStorage.getItem('username');
-    const navigate = useNavigate(); // Initialize the navigate function
+    const navigate = useNavigate();
+    const location = useLocation();
+    const [loggedIn, setLoggedIn] = useState(false);
 
+    // Utility to check if JWT is expired
+    function isTokenValid(token) {
+      if (!token) return false;
+      try {
+        const payload = JSON.parse(atob(token.split('.')[1]));
+        return payload.exp * 1000 > Date.now();
+      } catch (e) {
+        return false;
+      }
+    }
+
+    // Read loggedIn from query param if present
     useEffect(() => {
-        console.log("Current username:", username); // Debugging: Check username in localStorage
+        const token = localStorage.getItem('token');
+        setLoggedIn(isTokenValid(token));
+        console.log("Current username:", username);
     }, [username]);
 
     // Navigation functions for each button
     const goToTransactions = () => navigate("/transactions");
     const goToReviews = () => navigate("/reviews");
-    const goToSentiment = () => navigate("/s");
-    const goToRecommend = () => navigate("/recommend");
+    const goToSentiment = () => {
+        const token = localStorage.getItem('token');
+        if (isTokenValid(token)) {
+            setLoggedIn(true);
+            navigate("/s");
+        } else {
+            setLoggedIn(false);
+            localStorage.removeItem('token');
+            window.location.href = "http://localhost:5173/login";
+        }
+    };
+    const goToRecommend = () => {
+        const token = localStorage.getItem('token');
+        if (isTokenValid(token)) {
+            setLoggedIn(true);
+            navigate("/recommend");
+        } else {
+            setLoggedIn(false);
+            localStorage.removeItem('token');
+            window.location.href = "http://localhost:5173/login";
+        }
+    };
     const handleNavigation = () => {
-       window.location.href = 'http://127.0.0.1:5000/dash/';
-    
-      };
+        const token = localStorage.getItem('token');
+        if (isTokenValid(token)) {
+            setLoggedIn(true);
+            window.location.href = "http://localhost:5000/dash/";
+        } else {
+            setLoggedIn(false);
+            localStorage.removeItem('token');
+            window.location.href = "http://localhost:5173/login";
+        }
+    };
     return (
         <div className="welcome-page">
             <h1>Welcome, {username ? username : "Guest"}!</h1>
-            {username ? (
+            {loggedIn ? (
                 <p>You have successfully logged in.</p>
             ) : (
                 <p>Please log in to access your account.</p>
             )}
 
             {/* Debugging: Ensure the buttons are being displayed */}
-            {username && (
+            {loggedIn && (
                 <div className="dashboard">
                     <div className="featured" onClick={goToSentiment}>
                         <img src={assets.Product_Performance}/>
@@ -70,3 +113,5 @@ export default function Welcome() {
         </div>
     );
 }
+
+export default Welcome;

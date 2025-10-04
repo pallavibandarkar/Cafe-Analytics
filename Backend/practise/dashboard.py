@@ -10,8 +10,9 @@ from mlxtend.frequent_patterns import fpgrowth, association_rules
 import dash_cytoscape as cyto
 from prophet import Prophet
 import numpy as np
-from comm import create_comm
 import plotly.graph_objects as go
+from dash.dependencies import Input, Output
+from dash import dcc
 def init_dashboard(server, csv_file):
     dash_app = dash.Dash(
         __name__,
@@ -154,7 +155,7 @@ def init_dashboard(server, csv_file):
     dash_app.layout = dbc.Container([
         dbc.NavbarSimple(
             dbc.Nav(
-                dbc.Button("Back", color="secondary", href="http://localhost:5173/welcome", className="ml-auto"),
+                dbc.Button("Back", color="secondary", href="http://localhost:5173/welcome?loggedIn=true", className="ml-auto"),
                 className="ms-auto",  # push to right
                 navbar=True
             ),
